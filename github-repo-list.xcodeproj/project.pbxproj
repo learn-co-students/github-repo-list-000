@@ -15,23 +15,8 @@
 		313A2C3D1A0815B500F1073A /* FISReposTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C3A1A0815B500F1073A /* FISReposTableViewController.m */; };
 		313A2C3E1A0815B500F1073A /* FISGithubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C3C1A0815B500F1073A /* FISGithubRepository.m */; };
 		313A2C401A08161900F1073A /* repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 313A2C3F1A08161900F1073A /* repositories.json */; };
-		313A2C451A08163500F1073A /* FISGithubAPIClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C411A08163500F1073A /* FISGithubAPIClientSpec.m */; };
-		313A2C461A08163500F1073A /* FISGithubRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C421A08163500F1073A /* FISGithubRepositorySpec.m */; };
-		313A2C471A08163500F1073A /* FISReposDataStoreSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C431A08163500F1073A /* FISReposDataStoreSpec.m */; };
-		313A2C481A08163500F1073A /* FISReposTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C441A08163500F1073A /* FISReposTableViewControllerSpec.m */; };
-		90E22811C059FBCEF41AD212 /* libPods-github-repo-listTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8AEF2B535A38CE88DE47D1 /* libPods-github-repo-listTests.a */; };
 		A3723A903BC0A92C119E4BB1 /* libPods-github-repo-list.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E094F4B27652BCFC408E40 /* libPods-github-repo-list.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		313A2C2A1A08157300F1073A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 313A2C081A08157300F1073A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 313A2C0F1A08157300F1073A;
-			remoteInfo = "github-repo-list";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04E094F4B27652BCFC408E40 /* libPods-github-repo-list.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-github-repo-list.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +30,6 @@
 		313A2C1E1A08157300F1073A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		313A2C201A08157300F1073A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		313A2C231A08157300F1073A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		313A2C291A08157300F1073A /* github-repo-listTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "github-repo-listTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		313A2C2E1A08157300F1073A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		313A2C391A0815B500F1073A /* FISReposTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISReposTableViewController.h; sourceTree = "<group>"; };
 		313A2C3A1A0815B500F1073A /* FISReposTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISReposTableViewController.m; sourceTree = "<group>"; };
@@ -70,14 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		313A2C261A08157300F1073A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90E22811C059FBCEF41AD212 /* libPods-github-repo-listTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				313A2C101A08157300F1073A /* github-repo-list.app */,
-				313A2C291A08157300F1073A /* github-repo-listTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,26 +165,6 @@
 			productReference = 313A2C101A08157300F1073A /* github-repo-list.app */;
 			productType = "com.apple.product-type.application";
 		};
-		313A2C281A08157300F1073A /* github-repo-listTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 313A2C361A08157300F1073A /* Build configuration list for PBXNativeTarget "github-repo-listTests" */;
-			buildPhases = (
-				3D6AC96180A62623AB6D98A2 /* Check Pods Manifest.lock */,
-				313A2C251A08157300F1073A /* Sources */,
-				313A2C261A08157300F1073A /* Frameworks */,
-				313A2C271A08157300F1073A /* Resources */,
-				1D7E3915F1CBAE0A302BBFFF /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				313A2C2B1A08157300F1073A /* PBXTargetDependency */,
-			);
-			name = "github-repo-listTests";
-			productName = "github-repo-listTests";
-			productReference = 313A2C291A08157300F1073A /* github-repo-listTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,10 +176,6 @@
 				TargetAttributes = {
 					313A2C0F1A08157300F1073A = {
 						CreatedOnToolsVersion = 6.0.1;
-					};
-					313A2C281A08157300F1073A = {
-						CreatedOnToolsVersion = 6.0.1;
-						TestTargetID = 313A2C0F1A08157300F1073A;
 					};
 				};
 			};
@@ -242,7 +193,6 @@
 			projectRoot = "";
 			targets = (
 				313A2C0F1A08157300F1073A /* github-repo-list */,
-				313A2C281A08157300F1073A /* github-repo-listTests */,
 			);
 		};
 /* End PBXProject section */
@@ -256,13 +206,6 @@
 				313A2C401A08161900F1073A /* repositories.json in Resources */,
 				313A2C241A08157300F1073A /* LaunchScreen.xib in Resources */,
 				313A2C211A08157300F1073A /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		313A2C271A08157300F1073A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,36 +225,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-github-repo-list/Pods-github-repo-list-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1D7E3915F1CBAE0A302BBFFF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-github-repo-listTests/Pods-github-repo-listTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D6AC96180A62623AB6D98A2 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B2022E4DC67C9D9ADD110E94 /* Check Pods Manifest.lock */ = {
@@ -343,26 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		313A2C251A08157300F1073A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				313A2C471A08163500F1073A /* FISReposDataStoreSpec.m in Sources */,
-				313A2C461A08163500F1073A /* FISGithubRepositorySpec.m in Sources */,
-				313A2C451A08163500F1073A /* FISGithubAPIClientSpec.m in Sources */,
-				313A2C481A08163500F1073A /* FISReposTableViewControllerSpec.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		313A2C2B1A08157300F1073A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 313A2C0F1A08157300F1073A /* github-repo-list */;
-			targetProxy = 313A2C2A1A08157300F1073A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		313A2C1D1A08157300F1073A /* Main.storyboard */ = {
@@ -482,42 +376,6 @@
 			};
 			name = Release;
 		};
-		313A2C371A08157300F1073A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C086FD10914BBE0F46951B02 /* Pods-github-repo-listTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "github-repo-listTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/github-repo-list.app/github-repo-list";
-			};
-			name = Debug;
-		};
-		313A2C381A08157300F1073A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FBC393F08A472B099BC9740 /* Pods-github-repo-listTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "github-repo-listTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/github-repo-list.app/github-repo-list";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -535,15 +393,6 @@
 			buildConfigurations = (
 				313A2C341A08157300F1073A /* Debug */,
 				313A2C351A08157300F1073A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		313A2C361A08157300F1073A /* Build configuration list for PBXNativeTarget "github-repo-listTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				313A2C371A08157300F1073A /* Debug */,
-				313A2C381A08157300F1073A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
