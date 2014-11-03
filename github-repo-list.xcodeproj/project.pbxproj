@@ -19,6 +19,7 @@
 		313A2C461A08163500F1073A /* FISGithubRepositorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C421A08163500F1073A /* FISGithubRepositorySpec.m */; };
 		313A2C471A08163500F1073A /* FISReposDataStoreSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C431A08163500F1073A /* FISReposDataStoreSpec.m */; };
 		313A2C481A08163500F1073A /* FISReposTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 313A2C441A08163500F1073A /* FISReposTableViewControllerSpec.m */; };
+		90E22811C059FBCEF41AD212 /* libPods-github-repo-listTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8AEF2B535A38CE88DE47D1 /* libPods-github-repo-listTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FBC393F08A472B099BC9740 /* Pods-github-repo-listTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github-repo-listTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-github-repo-listTests/Pods-github-repo-listTests.release.xcconfig"; sourceTree = "<group>"; };
 		313A2C101A08157300F1073A /* github-repo-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "github-repo-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		313A2C141A08157300F1073A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		313A2C151A08157300F1073A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		313A2C421A08163500F1073A /* FISGithubRepositorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISGithubRepositorySpec.m; sourceTree = "<group>"; };
 		313A2C431A08163500F1073A /* FISReposDataStoreSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISReposDataStoreSpec.m; sourceTree = "<group>"; };
 		313A2C441A08163500F1073A /* FISReposTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISReposTableViewControllerSpec.m; sourceTree = "<group>"; };
+		8E8AEF2B535A38CE88DE47D1 /* libPods-github-repo-listTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-github-repo-listTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C086FD10914BBE0F46951B02 /* Pods-github-repo-listTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github-repo-listTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-github-repo-listTests/Pods-github-repo-listTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E22811C059FBCEF41AD212 /* libPods-github-repo-listTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 				313A2C121A08157300F1073A /* github-repo-list */,
 				313A2C2C1A08157300F1073A /* github-repo-listTests */,
 				313A2C111A08157300F1073A /* Products */,
+				CDE51378EEFE178E78A32A68 /* Pods */,
+				9B207A8364C29294E706748C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +143,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B207A8364C29294E706748C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8AEF2B535A38CE88DE47D1 /* libPods-github-repo-listTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE51378EEFE178E78A32A68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C086FD10914BBE0F46951B02 /* Pods-github-repo-listTests.debug.xcconfig */,
+				2FBC393F08A472B099BC9740 /* Pods-github-repo-listTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 313A2C361A08157300F1073A /* Build configuration list for PBXNativeTarget "github-repo-listTests" */;
 			buildPhases = (
+				3D6AC96180A62623AB6D98A2 /* Check Pods Manifest.lock */,
 				313A2C251A08157300F1073A /* Sources */,
 				313A2C261A08157300F1073A /* Frameworks */,
 				313A2C271A08157300F1073A /* Resources */,
+				1D7E3915F1CBAE0A302BBFFF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +257,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D7E3915F1CBAE0A302BBFFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-github-repo-listTests/Pods-github-repo-listTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6AC96180A62623AB6D98A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		313A2C0C1A08157300F1073A /* Sources */ = {
@@ -383,6 +442,7 @@
 		};
 		313A2C371A08157300F1073A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C086FD10914BBE0F46951B02 /* Pods-github-repo-listTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -402,6 +462,7 @@
 		};
 		313A2C381A08157300F1073A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBC393F08A472B099BC9740 /* Pods-github-repo-listTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -434,6 +495,7 @@
 				313A2C351A08157300F1073A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		313A2C361A08157300F1073A /* Build configuration list for PBXNativeTarget "github-repo-listTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +504,7 @@
 				313A2C381A08157300F1073A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
