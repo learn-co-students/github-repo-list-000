@@ -154,15 +154,10 @@ As you can see we have quite a lot of data on each repo.
 
 ## Instructions
 
-  1. Finish the `FISGithubRepository` object. It should have the following properties and an `isEqual` method that compares the two `FISGithubRepository` objects.
-
-  ```
-  (NSString *)fullNamepa
-  (NSURL *)htmlURL
-  (NSString *)repositoryID
-  ```
-
+  1. Make your view controller download the data, store each name of the repo in an array and display them in the `UITableViewController`.
   2. In the `FISGithubAPIClient` create a method that retreives a list of all of the repositories, and passes the `NSArray` of `NSDictionaries` to a completionBlock
-  3. Create a new method in `FISGithubRepository` that will take the `NSDictionary` representation of the repository and returns a new instance of `FISGithubRepository` all filled out.
-  4. Add a method to `FISGithubDataStore` that uses `FISGithubAPIClient` to fill the `repositories` property with `FISGithubRepository` objects. In the completionBlock just return a `BOOL` success variable.
-  5. In your `FISReposTableViewController` on `viewDidLoad` retreive the repos from the `FISGithubDataStore` and display them!
+  3. In your `FISReposTableViewController` on `viewDidLoad` retreive the repos from the `FISGithubAPIClient` and display them!
+
+## Extra Credit
+
+Don't just pass around `NSDictionary` and `NSArray` objects! Make an `FISGithubRepository` object and pass those around.
